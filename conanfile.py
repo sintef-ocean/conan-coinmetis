@@ -32,6 +32,9 @@ class CoinMetisConan(ConanFile):
             win_bash=tools.os_info.is_windows)
         self._autotools.libs = []
 
+        if self.settings.compiler == "Visual Studio":
+            self._autotools.flags.append("-FS")
+
         yes_no = lambda v: "yes" if v else "no"
         configure_args = [
             "--enable-shared={}".format(yes_no(self.options.shared)),

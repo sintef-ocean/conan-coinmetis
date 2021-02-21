@@ -6,13 +6,13 @@
 
 [Conan.io](https://conan.io) recipe for [metis](http://glaros.dtc.umn.edu/gkhome/metis/metis/overview).
 
-This recipe is made with the help of `coin-or` builder repository [ThirdParty-metis](https://github.com/coin-or-tools/ThirdParty-Metis).
+This recipe is made with the help of `coin-or` builder repository [ThirdParty-Metis](https://github.com/coin-or-tools/ThirdParty-Metis).
 The recipe generates library packages, which can be found at [Bintray](https://bintray.com/sintef-ocean/conan/coinmetis%3Asintef).
 The package is usually consumed using the `conan install` command or a *conanfile.txt*.
 
 ## How to use this package
 
-1. Add remote to conan's package [registry.txt](http://docs.conan.io/en/latest/reference/config_files/registry.txt.html):
+1. Add remote to conan's package [remotes](https://docs.conan.io/en/latest/reference/commands/misc/remote.html?highlight=remotes):
 
    ```bash
    $ conan remote add sintef https://api.bintray.com/conan/sintef-ocean/conan
